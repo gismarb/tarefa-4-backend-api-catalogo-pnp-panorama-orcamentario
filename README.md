@@ -899,7 +899,7 @@ GET /budget
 GET /budget/:id
 ```
 
-Essa decisão reduz complexidade sem remover requisitos obrigatórios.
+Essa decisão foi tomada para, inicialmente, reduzir a complexidade mas, sem remover requisitos obrigatórios.
 
 ### 16.11. Tratamento adicional de ID inválido
 
@@ -1151,4 +1151,4 @@ A coleção utilizada nos testes foi exportada em formato compatível com o Inso
 
 ## 22. Licença
 
-A licença do projeto é definida pelo arquivo `LICENSE` presente no repositório.
+A licença do projeto é definida pelo arquivo [`LICENSE`](LICENSE) presente no repositório.
