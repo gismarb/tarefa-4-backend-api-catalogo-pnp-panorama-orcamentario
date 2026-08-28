@@ -1,0 +1,94 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: API Panorama Orçamentário PNP
+meta:
+  id: wrk_06f93259cc1d45fa9666d6c35619b361
+  created: 1787834475740
+  modified: 1787834577472
+  description: ""
+collection:
+  - url: http://localhost:3001/
+    name: Status da API
+    meta:
+      id: req_ea29eaab7cdd48c59c7081a33db5cf9f
+      created: 1787834515459
+      modified: 1787834730532
+      isPrivate: false
+      description: ""
+      sortKey: -1787834515459
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3001/budget
+    name: Listar Indicadores
+    meta:
+      id: req_f2db2990b95748a694b817c30ac62a9a
+      created: 1787834734582
+      modified: 1787834771922
+      isPrivate: false
+      description: ""
+      sortKey: -1787834734582
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3001/budget/1
+    name: Buscar indicador por ID
+    meta:
+      id: req_d80ad60503db474bbac0bbede2f1d13a
+      created: 1787834822528
+      modified: 1787834870700
+      isPrivate: false
+      description: ""
+      sortKey: -1787834822528
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: http://localhost:3001/budget/99999
+    name: Buscar indicador inexistente
+    meta:
+      id: req_5ba684a9b9fc4f0fb0e13cf019fe1ba6
+      created: 1787834883927
+      modified: 1787834905707
+      isPrivate: false
+      description: ""
+      sortKey: -1787834883927
+    method: GET
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_87806dcef07f770bb4c6907f51e3968cb6787976
+    created: 1787834475742
+    modified: 1787834475742
+environments:
+  name: Base Environment
+  meta:
+    id: env_87806dcef07f770bb4c6907f51e3968cb6787976
+    created: 1787834475741
+    modified: 1787834475741
+    isPrivate: false

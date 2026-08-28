@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:15-alpine
+    container_name: postgres-pnp-panorama
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: pnp_user
+      POSTGRES_PASSWORD: pnp_password
+      POSTGRES_DB: pnp_panorama
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
